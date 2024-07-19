@@ -1,0 +1,13 @@
+const express = require("express");
+const noteController = require("../controllers/note");
+const authenticateToken = require("../middlewares/all");
+const router = express.Router();
+router.use(authenticateToken);
+router.get("/note", noteController.getAllNotes);
+router.get("/note/:id", noteController.getNoteById);
+router.post("/note", noteController.createNote);
+router.post("/share", noteController.shareNote);
+router.put("/note", noteController.updateNote);
+router.delete("/note/:id", noteController.deleteNote);
+router.get("/search", noteController.searchNotes);
+module.exports = router;
