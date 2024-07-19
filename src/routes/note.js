@@ -1,6 +1,6 @@
 const express = require("express");
 const noteController = require("../controllers/note");
-const { authenticateToken } = require("../middlewares/all");
+const authenticateToken = require("../middlewares/all");
 const router = express.Router();
 router.use(authenticateToken);
 router.get("/note", noteController.getAllNotes);
