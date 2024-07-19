@@ -1,5 +1,5 @@
 const express = require("express");
-const rateLimiter = require("./middlewares/rateLimiter");
+const rateLimit = require("express-rate-limit");
 const dotenv = require("dotenv");
 const { mySequelize } = require("./models");
 const rUser = require("./routes/user");
@@ -8,7 +8,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(rateLimiter);
+const limiter = rateLimit({
+  windowMs: 10 * 60 * 1000,
+  max: 100,
+  message: "Too many requests from this IP, please try again after 15 minutes",
+});
+app.use(limiter);
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
