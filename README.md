@@ -12,7 +12,7 @@ DB_PASSWORD=1234567890 - passwords
 DB_NAME=myDB_speer - database name 
 ENCRYPT_ALGORITHM=aes-256-cbc -- This is my encrypt algorithm
 ENCRYPT_SECRET=hZF6cTYDPRKYxD8E0v8NlFCt  -- the secret for encrypting
-JWT_SECRET=5qb&H:!!9rm@k4+DKwrEYcGj<:iz_3kz.Z.%pVF-7HDJT,~nl::lnhver$/Gz|Dx~nbq-tP_V^CzJd&1t4XzCV@~N%=lJ<9m  --- this the jwt token secret.
+JWT_SECRET=11122223333 --- This is the jwt token secret.
 
 
  You can run "npm install --legacy-peer-deps", for I have some conflict with eslint, but nothing will affect running it.
