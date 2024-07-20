@@ -24,4 +24,5 @@ JWT_SECRET=11122223333 --- This is the jwt token secret.
 
 
 I have deployed it to Render with https://new-folder-24xe.onrender.com. Feel free to test it.
-My postman share is https://www.postman.com/restless-shuttle-4454/workspace/speer/request/10158969-b51ad4e1-c8db-4b56-b33e-4f6e7ff0b265?tab=auth , you can not send anything, but you can see the structure
+
+My postman share is https://www.postman.com/restless-shuttle-4454/workspace/speer/overview , you can not send anything, but you can see the structure
